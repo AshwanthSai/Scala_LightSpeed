@@ -38,7 +38,8 @@ object FunctionalProgramming extends App {
   val alternativePairs = for {
     number <- List(1,2,3)
     letter <- List('a','b','c')
-  } yield s"$number -$letter"
+    symbol <- List('$','#','@')
+  } yield s"$number -$letter -$symbol"
   // Equivalent to the map/flatMap Chain Above.
   print(alternativePairs)
 }
